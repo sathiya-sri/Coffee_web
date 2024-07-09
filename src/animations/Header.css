@@ -1,0 +1,19 @@
+.list{
+    position: relative;
+    transition: all 0.2s ease-in-out;
+  }
+  .list:hover,
+  .list.active {
+    color: #ac7b48;
+  }
+.list:hover::after,
+.list.active::after {
+    content: "";
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    bottom: -0.1px;
+    left: 1px;
+    background: #ac7b48;
+  }
+  

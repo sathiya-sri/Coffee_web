@@ -1,0 +1,33 @@
+.background {
+  background: url(https://i.pinimg.com/474x/25/5e/36/255e36e6f1e35e2a9568dc882bb56ad7.jpg)
+    center / cover fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.background::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: hsla(0, 0%, 0%, 0.75);
+}
+.list {
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.list:hover,
+.list.active {
+  color: #ac7b48;
+}
+.list:hover::after,
+.list.active::after {
+  content: "";
+  width: 50%;
+  height: 2px;
+  position: absolute;
+  bottom: -0.1px;
+  left: 1px;
+  background: #ac7b48;
+}

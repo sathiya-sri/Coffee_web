@@ -1,0 +1,25 @@
+.card {
+  position: relative;
+  background-color: black;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0.75rem;
+  border: 1px solid white;
+  opacity: 0.3;
+  border-radius: inherit;
+}
+.shape {
+  position: absolute;
+  right: 1.24em;
+  top: 1px;
+  width: 120px;
+  opacity: 0.3;
+}
+.card:hover{
+  transform: translateY(-0.5rem);
+  transition: .5s ease-in-out;
+}
